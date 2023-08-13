@@ -93,7 +93,7 @@ class RouteListActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListe
     private fun observeRouteOnClickLiveData() {
         routesViewModel.getOnRouteOnClick().observe(this) {
             val intent = Intent(this, RouteDetailActivity::class.java)
-            intent.putExtra("routeId", it)
+            intent.putExtra(ROUTE_ID_KEY, it)
             startActivity(intent)
         }
     }
@@ -128,5 +128,9 @@ class RouteListActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListe
 
     override fun onRefresh() {
         routesViewModel.refreshRouteList()
+    }
+
+    companion object {
+        const val ROUTE_ID_KEY = "routeId"
     }
 }

@@ -2,6 +2,9 @@
     <string name="app_name">BusRight</string>
     <string name="search">Search</string>
     <string name="search_hint">Search your favourite route</string>
+    <string name="no_of_stops">Number of stops in this route are:  %1$s </string>
+    <string name="no_of_students">Number of students in this route based on stops are:  %1$s </string>
+
     <!--
         https://github.com/square/leakcanary/issues/2380
         Issue with the leak canary and junit

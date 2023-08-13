@@ -22,15 +22,15 @@ import com.osamaaftab.busright.R
 import com.osamaaftab.busright.databinding.ActivityRouteDetailBinding
 import com.osamaaftab.busright.domain.model.RouteModel
 import com.osamaaftab.busright.domain.model.StopModel
+import com.osamaaftab.busright.presentation.ui.activity.RouteListActivity.Companion.ROUTE_ID_KEY
 import com.osamaaftab.busright.presentation.viewmodel.RouteDetailViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
-
 
 class RouteDetailActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private val routeDetailViewModel: RouteDetailViewModel by viewModel()
     private lateinit var activityRouteDetailBinding: ActivityRouteDetailBinding
-    private val routeId: String by lazy { intent?.getStringExtra("routeId") ?: "" }
+    private val routeId: String by lazy { intent?.getStringExtra(ROUTE_ID_KEY) ?: "" }
     private lateinit var map: GoogleMap
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -71,9 +71,9 @@ class RouteDetailActivity : AppCompatActivity(), OnMapReadyCallback {
             activityRouteDetailBinding.routeContentView.visibility = View.VISIBLE
             activityRouteDetailBinding.route.text = it.name
             activityRouteDetailBinding.totalStop.text =
-                "Number of stops in this route are: " + it.stops.size
+                getString(R.string.no_of_stops, it.stops.size.toString())
             activityRouteDetailBinding.totalStudents.text =
-                "Number of students in this route based on stops are: " + it.stops.map { stop -> stop.students.size }
+                getString(R.string.no_of_students, it.stops.map { stop -> stop.students.size })
             drawRoutePath(it)
         }
     }
@@ -83,7 +83,10 @@ class RouteDetailActivity : AppCompatActivity(), OnMapReadyCallback {
         polylineOptions.addAll(PolyUtil.decode(routeModel.overviewPolyline?.points))
         map.animateCamera(
             CameraUpdateFactory.newLatLngZoom(
-                LatLng(routeModel.stops.first().coordinates.lat, routeModel.stops.first().coordinates.lng),
+                LatLng(
+                    routeModel.stops.first().coordinates.lat,
+                    routeModel.stops.first().coordinates.lng
+                ),
                 16f
             )
         )
