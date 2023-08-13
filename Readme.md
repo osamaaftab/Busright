@@ -5,7 +5,7 @@ A sample app that display list of Route.
 # Features
 
 1. List of Route
-2. Search your favourite artist.
+2. Search your favourite route.
 3. Pull to refresh.
 4. Route detail with optimal route path
 
