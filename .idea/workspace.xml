@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_4" />
+        <device id="pixel_3_xl" />
+        <device id="pixel_xl" />
+        <device id="pixel_6" />
+        <device id="_device_class_desktop" />
+        <device id="_device_class_tablet" />
+        <device id="_device_class_phone" />
+        <device id="_device_class_foldable" />
+        <device id="pixel_4_xl" />
+        <device id="pixel_6_pro" />
+      </config>
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="36212825-456f-44e1-ae53-e7380724a44e" name="Changes" comment="* Handled">
+      <change beforePath="$PROJECT_DIR$/../Teya/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/androidTest/java/com/osamaaftab/teya/AlbumListTestActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/androidTest/java/com/osamaaftab/teya/MockTestRunner.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/androidTest/java/com/osamaaftab/teya/common/AssetReaderManager.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/androidTest/java/com/osamaaftab/teya/common/Constant.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/androidTest/java/com/osamaaftab/teya/common/OkHttp3IdlingResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/androidTest/java/com/osamaaftab/teya/common/RecyclerViewItemCountAssertion.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/androidTest/java/com/osamaaftab/teya/common/SuccessDispatcher.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/androidTest/java/com/osamaaftab/teya/common/ViewAction.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/assets/album.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/app/MainApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/data/ApiErrorHandle.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/data/repository/AlbumRepositoryImp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/data/source/remote/AlbumServices.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/di/module/ApiServicesModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/di/module/AppModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/di/module/NetWorkModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/di/module/RepositoryModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/di/module/UseCaseModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/di/module/ViewModelModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/domain/model/EntryModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/domain/model/ErrorModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/domain/model/FeedModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/domain/model/ResponseModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/domain/repository/AlbumRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/domain/usecase/GetAlbumUseCase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/domain/usecase/base/UseCase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/domain/usecase/base/UseCaseResponse.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/adapter/GenericListAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/adapter/GenericPagerAdpater.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/base/BaseViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/common/BindingAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/common/GlideImageLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/common/PagerItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/common/ProgressAppGlideModule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/diffutil/AlbumDiffUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/filtertype/AlbumFilter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/ui/activity/AlbumListActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/ui/fragment/ImageFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/viewholder/AlbumViewHolder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/java/com/osamaaftab/teya/presentation/viewmodel/AlbumViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable-hdpi/no_internet_connection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable-mdpi/no_internet_connection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable-xhdpi/no_internet_connection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable-xxhdpi/no_internet_connection.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable/drawable_gradient_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable/ic_broken.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/drawable/ic_search.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/font/roboto_black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/font/roboto_bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/font/roboto_light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/font/roboto_medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/layout-v28/item_album.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/layout/activity_album_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/layout/fragment_gallery_images.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/layout/item_album.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/menu/menu_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/xml/network_security_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/main/res/xml/searchable.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/test/java/com/osamaaftab/teya/data/repository/AlbumRepositoryTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/test/java/com/osamaaftab/teya/domain/usecase/GetAlbumUseCaseTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/app/src/test/java/com/osamaaftab/teya/presentation/viewmodel/AlbumViewModelTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Teya/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/osamaaftab/.android/avd/Pixel_6_Pro_API_30.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Teya" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile_vertical" />
+        <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
+        <option value="Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2PazibFSthuU0MdewEdSe6LGOCu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DEBUGGABLE_DEVICE&quot;: &quot;samsung-sm_g980f-RF8N82F76BP&quot;,
+    &quot;DEBUGGABLE_PROCESS&quot;: &quot;com.osamaaftab.busright&quot;,
+    &quot;DEBUGGER_ID&quot;: &quot;Auto&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHOW_ALL_PROCESSES&quot;: &quot;false&quot;,
+    &quot;ScreenshotViewer.SavePath&quot;: &quot;/Users/osamaaftab/Downloads&quot;,
+    &quot;android-custom-view/Users/osamaaftab/.gradle/caches/modules-2/files-2.1/androidx.appcompat/appcompat/1.6.1/ace9a78b961165396147e8691faa18c1b0e48e20/appcompat-1.6.1-sources.jar!/androidx/appcompat/widget/SearchView.java_SELECTED&quot;: &quot;SearchView&quot;,
+    &quot;android-custom-view/Users/osamaaftab/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.3.0/f4de7876e10ff121102f131b26d4a98b1613a012/recyclerview-1.3.0-sources.jar!/androidx/recyclerview/widget/RecyclerView.java_SELECTED&quot;: &quot;RecyclerView&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/osamaaftab/Documents/android-developer-challenge-pcqqla/Teya/app/src/main/res/drawable&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/osamaaftab/Documents/android-developer-challenge-pcqqla/Busright&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JSON&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/font" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/raw" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.osamaaftab.rightbus.data.service" />
+      <recent name="com.osamaaftab.teya.data.service" />
+      <recent name="com.osamaaftab.teya.presentation.ui" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.osamaaftab.busright.presentation.viewmodel" />
+      <recent name="com.osamaaftab.busright.domain.usecase" />
+      <recent name="com.osamaaftab.busright.data.repository" />
+      <recent name="com.osamaaftab.busright.data.service" />
+      <recent name="com.osamaaftab.busright.data.source.remote" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="busright.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RouteListTestActivity" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="Teya.app.androidTest" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.osamaaftab.busright.RouteListTestActivity" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_NAME_REGEX" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="RETENTION_ENABLED" value="No" />
+      <option name="RETENTION_MAX_SNAPSHOTS" value="2" />
+      <option name="RETENTION_COMPRESS_SNAPSHOTS" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="onFetchAlbumListFails()" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="Teya.app.androidTest" />
+      <option name="TESTING_TYPE" value="3" />
+      <option name="METHOD_NAME" value="onFetchAlbumListFails" />
+      <option name="CLASS_NAME" value="com.osamaaftab.busright.RouteListTestActivity" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_NAME_REGEX" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="RETENTION_ENABLED" value="No" />
+      <option name="RETENTION_MAX_SNAPSHOTS" value="2" />
+      <option name="RETENTION_COMPRESS_SNAPSHOTS" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests in 'com.osamaaftab.busright.data.repository'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.osamaaftab.busright.data.repository.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'com.osamaaftab.busright.domain.usecase'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.osamaaftab.busright.domain.usecase.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'com.osamaaftab.busright.presentation.viewmodel'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.osamaaftab.busright.presentation.viewmodel.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'com.osamaaftab.busright.data.repository'" />
+        <item itemvalue="Gradle.Tests in 'com.osamaaftab.busright.presentation.viewmodel'" />
+        <item itemvalue="Gradle.Tests in 'com.osamaaftab.busright.domain.usecase'" />
+        <item itemvalue="Android Instrumented Tests.RouteListTestActivity" />
+        <item itemvalue="Android Instrumented Tests.onFetchAlbumListFails()" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36212825-456f-44e1-ae53-e7380724a44e" name="Changes" comment="" />
+      <created>1683710109132</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683710109132</updated>
+    </task>
+    <task id="LOCAL-00001" summary="* Initial commit.">
+      <created>1683713661759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683713661759</updated>
+    </task>
+    <task id="LOCAL-00002" summary="* Initial commit.">
+      <created>1683724294617</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683724294617</updated>
+    </task>
+    <task id="LOCAL-00003" summary="* Integrated MVVM with clean code architecture.&#10;* Integrated DI koin framework.&#10;* Integrated network layer with retrofit.">
+      <created>1683898217852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683898217852</updated>
+    </task>
+    <task id="LOCAL-00004" summary="* Added Unit tests.">
+      <created>1683898253922</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683898253922</updated>
+    </task>
+    <task id="LOCAL-00005" summary="* Completed showing a beautiful to the main UI.&#10;* Integrated showing progress bar while image is being downloaded.">
+      <created>1684014738206</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684014738206</updated>
+    </task>
+    <task id="LOCAL-00006" summary="* Integrated search functionality.">
+      <created>1684028164844</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684028164844</updated>
+    </task>
+    <task id="LOCAL-00007" summary="* Integrated leak canary for memory leaks detection.">
+      <created>1684028816775</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684028816775</updated>
+    </task>
+    <task id="LOCAL-00008" summary="* Added web mock server&#10;* Added UI testing using espresso.">
+      <created>1684143273949</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684143273949</updated>
+    </task>
+    <task id="LOCAL-00009" summary="* Added a Readme.md">
+      <created>1684145285409</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684145285409</updated>
+    </task>
+    <task id="LOCAL-00010" summary="* Added a Readme.md">
+      <created>1684149402142</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684149402142</updated>
+    </task>
+    <task id="LOCAL-00011" summary="* Added an apk file">
+      <created>1684149742545</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684149742545</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="* Initial commit." />
+    <MESSAGE value="* Integrated MVVM with clean code architecture.&#10;* Integrated DI koin framework.&#10;* Integrated network layer with retrofit." />
+    <MESSAGE value="* Added Unit tests." />
+    <MESSAGE value="* Completed showing a beautiful to the main UI.&#10;* Integrated showing progress bar while image is being downloaded." />
+    <MESSAGE value="* Integrated search functionality." />
+    <MESSAGE value="* Integrated leak canary for memory leaks detection." />
+    <MESSAGE value="* Added web mock server&#10;* Added UI testing using espresso." />
+    <MESSAGE value="* Added a Readme.md" />
+    <MESSAGE value="* Added an apk file" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Added an apk file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/osamaaftab/busright/data/source/remote/RouteRemoteDataSource.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/osamaaftab/busright/presentation/viewmodel/RoutesViewModel.kt</url>
+          <line>28</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Teya$AlbumViewModelTest.ic" NAME="AlbumViewModelTest Coverage Results" MODIFIED="1683888354814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$RoutesViewModelTest.ic" NAME="RoutesViewModelTest Coverage Results" MODIFIED="1691889398865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Nutmeg$AlbumViewModelTest.ic" NAME="AlbumViewModelTest Coverage Results" MODIFIED="1686091416738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$RouteRepositoryTest_getAlbums_from_remote_data_source_and_getUser_and_getPhoto_THEN_verify_if_they_are_mapped_to_album_object.ic" NAME="RouteRepositoryTest.getAlbums from remote data source and getUser and getPhoto THEN verify if they are mapped to album object Coverage Results" MODIFIED="1691860999355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$DirectionRepositoryTest.ic" NAME="DirectionRepositoryTest Coverage Results" MODIFIED="1691868708418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/busright$Tests_in__com_osamaaftab_busright_data_repository_.ic" NAME="Tests in 'com.osamaaftab.busright.data.repository' Coverage Results" MODIFIED="1691891587534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$Tests_in__com_osamaaftab_busright_presentation_viewmodel_.ic" NAME="Tests in 'com.osamaaftab.busright.presentation.viewmodel' Coverage Results" MODIFIED="1691891632681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$AlbumRepositoryTest.ic" NAME="AlbumRepositoryTest Coverage Results" MODIFIED="1683841460635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$GetAlbumUseCaseTest.ic" NAME="GetAlbumUseCaseTest Coverage Results" MODIFIED="1683838910716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$RouteDetailViewModelTest.ic" NAME="RouteDetailViewModelTest Coverage Results" MODIFIED="1691888792211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$com_osamaaftab_busright_presentation_viewmodel_in_Teya_app_main.ic" NAME="com.osamaaftab.busright.presentation.viewmodel in Teya.app.main Coverage Results" MODIFIED="1691889709633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.osamaaftab.busright.presentation.viewmodel.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Teya$RouteRepositoryTest.ic" NAME="RouteRepositoryTest Coverage Results" MODIFIED="1691867319407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/busright$Tests_in__com_osamaaftab_busright_domain_usecase_.ic" NAME="Tests in 'com.osamaaftab.busright.domain.usecase' Coverage Results" MODIFIED="1691891613133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Teya$RoutesViewModelTest_getRoutesOnSuccess_WHEN_routes_are_provided_THEN_verify_progress_bar_live_data_value_is_false_and_route_list_posts_to_live_data_contains_the_latest_album.ic" NAME="RoutesViewModelTest.getRoutesOnSuccess WHEN routes are provided THEN verify progress bar live data value is false and route list posts to live data contains the latest album Coverage Results" MODIFIED="1691887801719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
